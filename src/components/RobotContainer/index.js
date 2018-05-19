@@ -12,6 +12,7 @@ export const RobotContainer = ({data}) => {
               height ={robot.height}
               weight={robot.weight}
               intelligence_metric={robot.intelligence_metric}
+              key={robot.current_name + index}
             />
   })
   return (

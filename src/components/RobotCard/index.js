@@ -15,6 +15,7 @@ export const RobotCard = ({
       <p>intelligence: {intelligence_metric}</p>
       <p>date added: {date_added}</p>
       <p>first active: {first_active}</p>
+      <button>Deactivate Robot</button>
     </div>
   )
 }
