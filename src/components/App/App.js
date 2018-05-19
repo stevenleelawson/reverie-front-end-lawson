@@ -18,16 +18,26 @@ class App extends Component {
     this.setState({ robots })
   }
 
-  // fetchRobots = async () => {
-  //   try {
-  //     const response = await fetch('http://localhost:3000/api/v1/robots');
-  //     const data = await response.json();
-  //     const robots = this.setState({ robots: data })
-  //   } catch (error) {
-  //     throw new Error(error)
-  //   }
-  // }
+  addRobot = async (robot) => {
+    const postRobot = await api.postRobot(robot)
+  }
 
+  postRobot = async (robot) => {
+    console.log('postRobot', robot)
+    try {
+      const response = await fetch('http://localhost:3000/api/v1/robots', {
+        method: 'POST',
+        body: JSON.stringify(robot),
+        headers: {
+          'content-type': 'application/json'
+        }
+      })
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      throw new Error('Unable to add robot' + error)
+    }
+  };
 
   render() {
     return (
@@ -35,7 +45,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Lawson's Amazing Robits</h1>
         </header>
-        <PostForm />
+        <PostForm postRobot={this.postRobot}/>
         {
           this.state.robots &&
           <RobotContainer data={this.state.robots}/>

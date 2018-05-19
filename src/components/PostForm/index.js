@@ -2,34 +2,37 @@ import React, { Component } from 'react';
 import './styles.css';
 
 export default class PostForm extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       date_added: '',
       first_active: '',
       current_name: '',
       height: '',
       weight: '',
-      intelliegence_metric: null
+      intelligence_metric: 1
     }
-  }
-  // handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   this.props.createThought(this.state)
-  //   this.setState({ title: '', body: ''})
-  // }
-
-  handleChange = (e) => {
-    const { name, value} = e.target
-    console.log(name, value)
-    this.setState({
-      [name]: value
-    })
   }
 
   handleSubmit = (event) => {
-    event.preventDefault();
-    this.setState({ })
+    event.preventDefault()
+    console.log('handlesub', this.state)
+    this.props.postRobot(this.state)
+    // this.setState({
+    //   date_added: '',
+    //   first_active: '',
+    //   current_name: '',
+    //   height: '',
+    //   weight: '',
+    //   intelliegence_metric: 1
+    // })
+  }
+
+  handleChange = (e) => {
+    const { name, value} = e.target
+    this.setState({
+      [name]: value
+    })
   }
 
   render() {
@@ -39,13 +42,13 @@ export default class PostForm extends Component {
       current_name,
       height,
       weight,
-      intelliegence_metric
+      intelligence_metric
     } = this.state;
 
     return (
       <div className='form-container'>
         <h1>Add a new robit</h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input
             type='text'
             name='date_added'
@@ -83,9 +86,9 @@ export default class PostForm extends Component {
            />
           <input
              type='number'
-             name='intelliegence_metric'
-             placeholder='intelliegence_metric'
-             value={ intelliegence_metric }
+             name='intelligence_metric'
+             placeholder='intelligence_metric'
+             value={ intelligence_metric }
              onChange={ this.handleChange }
            />
           <button type='submit'>Add Robit</button>
