@@ -17,7 +17,7 @@ export default class PostForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
     console.log('handlesub', this.state)
-    this.props.postRobot(this.state)
+    this.props.addRobot(this.state)
     // this.setState({
     //   date_added: '',
     //   first_active: '',

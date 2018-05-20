@@ -1,11 +1,10 @@
 import React from 'react';
 import { RobotCard } from '../RobotCard';
 
-export const RobotContainer = ({data}) => {
-  console.log('yeah',data)
+export const RobotContainer = ({data, removeRobot}) => {
   const displayRobots = data.map( (robot, index) => {
-    console.log(robot)
     return <RobotCard
+              id={robot.id}
               date_added={robot.date_added}
               first_active={robot.first_active}
               current_name={robot.current_name}
@@ -13,6 +12,7 @@ export const RobotContainer = ({data}) => {
               weight={robot.weight}
               intelligence_metric={robot.intelligence_metric}
               key={robot.current_name + index}
+              removeRobot={removeRobot}
             />
   })
   return (
