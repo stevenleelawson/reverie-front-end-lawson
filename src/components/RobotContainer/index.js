@@ -1,7 +1,8 @@
 import React from 'react';
-import { RobotCard } from '../RobotCard';
+import  { RobotCard }  from '../RobotCard';
+import './styles.css';
 
-export const RobotContainer = ({data, removeRobot}) => {
+export const RobotContainer = ({data, removeRobot, updateRobot}) => {
   const displayRobots = data.map( (robot, index) => {
     return <RobotCard
               id={robot.id}
@@ -13,9 +14,10 @@ export const RobotContainer = ({data, removeRobot}) => {
               intelligence_metric={robot.intelligence_metric}
               key={robot.current_name + index}
               removeRobot={removeRobot}
+              updateRobot={updateRobot}
             />
   })
   return (
-    <div>{ displayRobots }</div>
+    <div className='robot-container'>{ displayRobots }</div>
   )
 }

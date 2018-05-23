@@ -16,16 +16,15 @@ export default class PostForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log('handlesub', this.state)
     this.props.addRobot(this.state)
-    // this.setState({
-    //   date_added: '',
-    //   first_active: '',
-    //   current_name: '',
-    //   height: '',
-    //   weight: '',
-    //   intelliegence_metric: 1
-    // })
+    this.setState({
+      date_added: '',
+      first_active: '',
+      current_name: '',
+      height: '',
+      weight: '',
+      intelliegence_metric: 1
+    })
   }
 
   handleChange = (e) => {
@@ -47,7 +46,7 @@ export default class PostForm extends Component {
 
     return (
       <div className='form-container'>
-        <h1>Add a new robit</h1>
+        <h1>Add a new robot</h1>
         <form onSubmit={this.handleSubmit}>
           <input
             type='text'
@@ -91,7 +90,7 @@ export default class PostForm extends Component {
              value={ intelligence_metric }
              onChange={ this.handleChange }
            />
-          <button type='submit'>Add Robit</button>
+          <button className='add-robot' type='submit'>Add Robot</button>
         </form>
       </div>
     )

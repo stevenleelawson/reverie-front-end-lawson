@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 export const RobotCard = ({
   id,
@@ -8,17 +9,28 @@ export const RobotCard = ({
   height,
   weight,
   intelligence_metric,
-  removeRobot
+  removeRobot,
+  updateRobot
 }) => {
+  // if (height) {
+  //   const spanText = document.querySelector('.taco').innerText
+  //
+  // }
+  // console.log(spanText)
   return (
-    <div>
+    <div className='card'>
       <h1>{current_name}</h1>
-      <p>height: {height}</p>
-      <p>weight: {weight}</p>
+      <p>height: <span
+        className='taco'
+        contentEditable='true'
+        onBlur={() => updateRobot(id)}
+        >
+          {height}</span></p>
+      <p>weight: <span contentEditable='true'>{weight}</span></p>
       <p>intelligence: {intelligence_metric}</p>
       <p>date added: {date_added}</p>
       <p>first active: {first_active}</p>
-      <button onClick={() => removeRobot(id)}>Deactivate Robot</button>
+      <button className='deactivate' onClick={() => removeRobot(id)}>Deactivate Robot</button>
     </div>
   )
 }

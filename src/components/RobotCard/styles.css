@@ -1,0 +1,17 @@
+.card {
+  margin: 1rem;
+  border: 1px solid grey;
+  padding: 1rem;
+}
+
+.deactivate {
+  border-radius: 1px;
+  margin-top: .5rem;
+  font-family: 'Avenir Next', sans-serif;
+  background-color: black;
+  color: chartreuse;
+}
+
+.deactivate:hover {
+  background-color: red;
+}

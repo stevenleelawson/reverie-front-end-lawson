@@ -33,20 +33,31 @@ class App extends Component {
     return response;
   }
 
+  updateRobot = async (id, robotChanges) => {
+    const response = await api.putRobot(id, robotChanges);
+    const robots = await api.fetchRobots();
+    this.setState({ robots })
+    return response;
+    console.log('sumbitch')
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Lawson's Amazing Robits</h1>
+          <h1 className="App-title">Lawson's Amazing Robots</h1>
         </header>
-        <PostForm addRobot={this.addRobot}/>
         {
           this.state.robots &&
           <RobotContainer
             data={this.state.robots}
             removeRobot={this.removeRobot}
+            updateRobot={this.updateRobot}
           />
         }
+        <PostForm
+          addRobot={this.addRobot}
+        />
       </div>
     );
   }

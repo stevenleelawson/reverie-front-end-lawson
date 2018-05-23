@@ -13,3 +13,11 @@ form {
 input {
   margin: 1rem;
 }
+
+.add-robot {
+  margin: .90rem;
+  border-radius: 1px;
+  font-family: 'Avenir Next', sans-serif;
+  background-color: black;
+  color: chartreuse;
+}
