@@ -2,20 +2,19 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-image: url('./bender_banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
   padding: 20px;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3rem;
 }
 
 .App-intro {

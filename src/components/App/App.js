@@ -6,8 +6,8 @@ import * as api from '../../apiCalls/';
 
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       robots: null
     }
@@ -16,40 +16,48 @@ class App extends Component {
   componentDidMount = async () => {
     const robots = await api.fetchRobots();
     this.setState({ robots })
+    console.log(this.state)
   }
 
   addRobot = async (robot) => {
-    const postRobot = await api.postRobot(robot)
+    const response = await api.postRobot(robot);
+    const robots = await api.fetchRobots();
+    this.setState({ robots })
+    return response;
   }
 
-  postRobot = async (robot) => {
-    console.log('postRobot', robot)
-    try {
-      const response = await fetch('http://localhost:3000/api/v1/robots', {
-        method: 'POST',
-        body: JSON.stringify(robot),
-        headers: {
-          'content-type': 'application/json'
-        }
-      })
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      throw new Error('Unable to add robot' + error)
-    }
-  };
+  removeRobot = async (id) => {
+    const response = await api.deleteRobot(id);
+    const robots = await api.fetchRobots();
+    this.setState({ robots })
+    return response;
+  }
+
+  updateRobot = async (id, robotChanges) => {
+    const response = await api.putRobot(id, robotChanges);
+    const robots = await api.fetchRobots();
+    this.setState({ robots })
+    return response;
+    console.log('sumbitch')
+  }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Lawson's Amazing Robits</h1>
+          <h1 className="App-title">Lawson's Amazing Robots</h1>
         </header>
-        <PostForm postRobot={this.postRobot}/>
         {
           this.state.robots &&
-          <RobotContainer data={this.state.robots}/>
+          <RobotContainer
+            data={this.state.robots}
+            removeRobot={this.removeRobot}
+            updateRobot={this.updateRobot}
+          />
         }
+        <PostForm
+          addRobot={this.addRobot}
+        />
       </div>
     );
   }
