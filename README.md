@@ -1,4 +1,4 @@
-('lawsons_robots.png');
+![wire](./lawsons_robots.png?raw=true "robot-screen")
 
 After cloning, please type `npm install` to install the required dependencies. After starting the server repo, please type `npm start`.
 
