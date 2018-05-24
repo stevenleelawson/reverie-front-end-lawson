@@ -4,7 +4,8 @@ export const fetchRobots = async () => {
     const robots = await response.json();
     return robots
   } catch (error) {
-    throw new Error(error)
+
+    throw new Error('Unable to fetch robots')
   }
 }
 
