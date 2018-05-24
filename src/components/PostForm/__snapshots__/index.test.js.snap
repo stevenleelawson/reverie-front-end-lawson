@@ -1,0 +1,515 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostForm should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostForm />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Add a new robot
+</h1>,
+        <form
+          onSubmit={[Function]}
+>
+          <input
+                    name="date_added"
+                    onChange={[Function]}
+                    placeholder="date_added"
+                    type="text"
+                    value=""
+          />
+          <input
+                    name="first_active"
+                    onChange={[Function]}
+                    placeholder="first_active"
+                    type="text"
+                    value=""
+          />
+          <input
+                    name="current_name"
+                    onChange={[Function]}
+                    placeholder="current_name"
+                    type="text"
+                    value=""
+          />
+          <input
+                    name="height"
+                    onChange={[Function]}
+                    placeholder="height"
+                    type="text"
+                    value=""
+          />
+          <input
+                    name="weight"
+                    onChange={[Function]}
+                    placeholder="weight"
+                    type="text"
+                    value=""
+          />
+          <input
+                    name="intelligence_metric"
+                    onChange={[Function]}
+                    placeholder="intelligence_metric"
+                    type="number"
+                    value={1}
+          />
+          <button
+                    className="add-robot"
+                    type="submit"
+          >
+                    Add Robot
+          </button>
+</form>,
+      ],
+      "className": "form-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add a new robot",
+        },
+        "ref": null,
+        "rendered": "Add a new robot",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              name="date_added"
+              onChange={[Function]}
+              placeholder="date_added"
+              type="text"
+              value=""
+/>,
+            <input
+              name="first_active"
+              onChange={[Function]}
+              placeholder="first_active"
+              type="text"
+              value=""
+/>,
+            <input
+              name="current_name"
+              onChange={[Function]}
+              placeholder="current_name"
+              type="text"
+              value=""
+/>,
+            <input
+              name="height"
+              onChange={[Function]}
+              placeholder="height"
+              type="text"
+              value=""
+/>,
+            <input
+              name="weight"
+              onChange={[Function]}
+              placeholder="weight"
+              type="text"
+              value=""
+/>,
+            <input
+              name="intelligence_metric"
+              onChange={[Function]}
+              placeholder="intelligence_metric"
+              type="number"
+              value={1}
+/>,
+            <button
+              className="add-robot"
+              type="submit"
+>
+              Add Robot
+</button>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "date_added",
+              "onChange": [Function],
+              "placeholder": "date_added",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "first_active",
+              "onChange": [Function],
+              "placeholder": "first_active",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "current_name",
+              "onChange": [Function],
+              "placeholder": "current_name",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "height",
+              "onChange": [Function],
+              "placeholder": "height",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "weight",
+              "onChange": [Function],
+              "placeholder": "weight",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "intelligence_metric",
+              "onChange": [Function],
+              "placeholder": "intelligence_metric",
+              "type": "number",
+              "value": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add Robot",
+              "className": "add-robot",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Add Robot",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Add a new robot
+</h1>,
+          <form
+            onSubmit={[Function]}
+>
+            <input
+                        name="date_added"
+                        onChange={[Function]}
+                        placeholder="date_added"
+                        type="text"
+                        value=""
+            />
+            <input
+                        name="first_active"
+                        onChange={[Function]}
+                        placeholder="first_active"
+                        type="text"
+                        value=""
+            />
+            <input
+                        name="current_name"
+                        onChange={[Function]}
+                        placeholder="current_name"
+                        type="text"
+                        value=""
+            />
+            <input
+                        name="height"
+                        onChange={[Function]}
+                        placeholder="height"
+                        type="text"
+                        value=""
+            />
+            <input
+                        name="weight"
+                        onChange={[Function]}
+                        placeholder="weight"
+                        type="text"
+                        value=""
+            />
+            <input
+                        name="intelligence_metric"
+                        onChange={[Function]}
+                        placeholder="intelligence_metric"
+                        type="number"
+                        value={1}
+            />
+            <button
+                        className="add-robot"
+                        type="submit"
+            >
+                        Add Robot
+            </button>
+</form>,
+        ],
+        "className": "form-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add a new robot",
+          },
+          "ref": null,
+          "rendered": "Add a new robot",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                name="date_added"
+                onChange={[Function]}
+                placeholder="date_added"
+                type="text"
+                value=""
+/>,
+              <input
+                name="first_active"
+                onChange={[Function]}
+                placeholder="first_active"
+                type="text"
+                value=""
+/>,
+              <input
+                name="current_name"
+                onChange={[Function]}
+                placeholder="current_name"
+                type="text"
+                value=""
+/>,
+              <input
+                name="height"
+                onChange={[Function]}
+                placeholder="height"
+                type="text"
+                value=""
+/>,
+              <input
+                name="weight"
+                onChange={[Function]}
+                placeholder="weight"
+                type="text"
+                value=""
+/>,
+              <input
+                name="intelligence_metric"
+                onChange={[Function]}
+                placeholder="intelligence_metric"
+                type="number"
+                value={1}
+/>,
+              <button
+                className="add-robot"
+                type="submit"
+>
+                Add Robot
+</button>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "date_added",
+                "onChange": [Function],
+                "placeholder": "date_added",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "first_active",
+                "onChange": [Function],
+                "placeholder": "first_active",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "current_name",
+                "onChange": [Function],
+                "placeholder": "current_name",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "height",
+                "onChange": [Function],
+                "placeholder": "height",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "weight",
+                "onChange": [Function],
+                "placeholder": "weight",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "intelligence_metric",
+                "onChange": [Function],
+                "placeholder": "intelligence_metric",
+                "type": "number",
+                "value": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add Robot",
+                "className": "add-robot",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Add Robot",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

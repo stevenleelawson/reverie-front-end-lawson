@@ -12,11 +12,6 @@ export const RobotCard = ({
   removeRobot,
   updateRobot
 }) => {
-  // if (height) {
-  //   const spanText = document.querySelector('.taco').innerText
-  //
-  // }
-  // console.log(spanText)
   return (
     <div className='card'>
       <h1>{current_name}</h1>
