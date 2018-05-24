@@ -1,4 +1,4 @@
-[screenshot]('lawsons_robots.png');
+('lawsons_robots.png');
 
 After cloning, please type `npm install` to install the required dependencies. After starting the server repo, please type `npm start`.
 
