@@ -23,7 +23,7 @@ export default class PostForm extends Component {
       current_name: '',
       height: '',
       weight: '',
-      intelliegence_metric: 1
+      intelligence_metric: 1
     })
   }
 

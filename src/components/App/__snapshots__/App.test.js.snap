@@ -24,13 +24,13 @@ ShallowWrapper {
           <h1
                     className="App-title"
           >
-                    Lawson's Amazing Robits
+                    Lawson's Amazing Robots
           </h1>
 </header>,
+        null,
         <PostForm
           addRobot={[Function]}
 />,
-        null,
       ],
       "className": "App",
     },
@@ -44,7 +44,7 @@ ShallowWrapper {
           "children": <h1
             className="App-title"
 >
-            Lawson's Amazing Robits
+            Lawson's Amazing Robots
 </h1>,
           "className": "App-header",
         },
@@ -54,15 +54,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Lawson's Amazing Robits",
+            "children": "Lawson's Amazing Robots",
             "className": "App-title",
           },
           "ref": null,
-          "rendered": "Lawson's Amazing Robits",
+          "rendered": "Lawson's Amazing Robots",
           "type": "h1",
         },
         "type": "header",
       },
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -74,7 +75,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      null,
     ],
     "type": "div",
   },
@@ -91,13 +91,13 @@ ShallowWrapper {
             <h1
                         className="App-title"
             >
-                        Lawson's Amazing Robits
+                        Lawson's Amazing Robots
             </h1>
 </header>,
+          null,
           <PostForm
             addRobot={[Function]}
 />,
-          null,
         ],
         "className": "App",
       },
@@ -111,7 +111,7 @@ ShallowWrapper {
             "children": <h1
               className="App-title"
 >
-              Lawson's Amazing Robits
+              Lawson's Amazing Robots
 </h1>,
             "className": "App-header",
           },
@@ -121,15 +121,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Lawson's Amazing Robits",
+              "children": "Lawson's Amazing Robots",
               "className": "App-title",
             },
             "ref": null,
-            "rendered": "Lawson's Amazing Robits",
+            "rendered": "Lawson's Amazing Robots",
             "type": "h1",
           },
           "type": "header",
         },
+        null,
         Object {
           "instance": null,
           "key": undefined,
@@ -141,7 +142,6 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        null,
       ],
       "type": "div",
     },
