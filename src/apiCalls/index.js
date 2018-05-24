@@ -9,7 +9,6 @@ export const fetchRobots = async () => {
 }
 
 export const postRobot = async (robot) => {
-  console.log('postRobot', robot)
   try {
     const response = await fetch('http://localhost:3000/api/v1/robots', {
       method: 'POST',
