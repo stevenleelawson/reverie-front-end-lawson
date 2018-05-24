@@ -38,7 +38,6 @@ class App extends Component {
     const robots = await api.fetchRobots();
     this.setState({ robots })
     return response;
-    console.log('sumbitch')
   }
 
   render() {
